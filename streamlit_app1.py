@@ -45,7 +45,7 @@ st.session_state.name
 # use checkboxes to show/hide data
 if st.checkbox('Show dataframe'):
     chart_data = pd.DataFrame(
-       np.random.randn(20, 3),
+       np.random.randn(6, 3),
        columns=['a', 'b', 'c'])
 
-    chart_data
+chart_data
