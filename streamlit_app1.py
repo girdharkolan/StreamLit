@@ -74,14 +74,14 @@ add_slider = st.sidebar.slider(
 )
 
 # st.columns lets you place widgets side-by-side, and st.expander lets you conserve space by hiding away large content.
-left_column, right_column = st.columns(3)
+left_column, right_column = st.columns(2)
 # You can use a column just like st.sidebar:
-left_column.button('Press me!')
+left_column.button('Press meee!')
 
 # Or even better, call Streamlit functions inside a "with" block:
 with right_column:
     chosen = st.radio(
-        'Sorting hat',
+        'Sorting Hat',
         ("Gryffindor", "Ravenclaw", "Hufflepuff", "Slytherin"))
     st.write(f"You are in {chosen} house!")
 
