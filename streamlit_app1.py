@@ -25,3 +25,24 @@ dataframe = pd.DataFrame(
     np.random.randn(10, 5),
     columns=('col %d' % i for i in range(5)))
 st.table(dataframe)
+
+
+chart_data = pd.DataFrame(
+     np.random.randn(20, 3),
+     columns=['a', 'b', 'c'])
+
+st.line_chart(chart_data)
+
+
+
+map_data = pd.DataFrame(
+    np.random.randn(1000, 2) / [50, 50] + [37.76, -122.4],
+    columns=['lat', 'lon'])
+
+st.map(map_data)
+
+
+
+import streamlit as st
+x = st.slider('x')  # 👈 this is a widget
+st.write(x, 'squared is', x * x)
