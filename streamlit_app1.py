@@ -39,7 +39,13 @@ x = st.slider('x')  # 👈 this is a widget
 st.write(x, 'Qubed is', x * x * x)
 
 # You can access the value at any point with:
-import streamlit as st
 st.text_input("Your name", key="name")
 st.session_state.name
 
+# use checkboxes to show/hide data
+if st.checkbox('Show dataframe'):
+    chart_data = pd.DataFrame(
+       np.random.randn(20, 3),
+       columns=['a', 'b', 'c'])
+
+    chart_data
