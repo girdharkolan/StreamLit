@@ -16,12 +16,12 @@ st.write(pd.DataFrame({
 
 #other way
 dataframe = pd.DataFrame(
-    np.random.randn(10, 20),
+    np.random.randn(10, 5),
     columns=('col %d' % i for i in range(5)))
 st.dataframe(dataframe.style.highlight_max(axis=0))
 
 
 dataframe = pd.DataFrame(
-    np.random.randn(10, 20),
+    np.random.randn(10, 5),
     columns=('col %d' % i for i in range(5)))
 st.table(dataframe)
