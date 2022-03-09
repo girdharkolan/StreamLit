@@ -37,3 +37,9 @@ st.map(map_data)
 import streamlit as st
 x = st.slider('x')  # 👈 this is a widget
 st.write(x, 'Qubed is', x * x * x)
+
+# You can access the value at any point with:
+import streamlit as st
+st.text_input("Your name", key="name")
+st.session_state.name
+
