@@ -74,8 +74,7 @@ add_slider = st.sidebar.slider(
 )
 
 # st.columns lets you place widgets side-by-side, and st.expander lets you conserve space by hiding away large content.
-
-left_column, right_column = st.columns(2)
+left_column, right_column = st.columns(3)
 # You can use a column just like st.sidebar:
 left_column.button('Press me!')
 
